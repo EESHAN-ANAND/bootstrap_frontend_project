@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+</head>
+<style>
+  body {
+    /* height: 1200px; */
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(191, 200, 35, 1) 100%);
+    font-family: 'Raleway', sans-serif;
+  }
+
+  * {
+    font-weight: 700;
+  }
+
+  nav {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 26%, rgba(252, 176, 69, 1) 100%);
+  }
+
+  #nav2 {
+    background-image: url("https://img.freepik.com/free-vector/minimalist-lines-background_1017-4388.jpg?w=740&t=st=1686061514~exp=1686062114~hmac=9ee918050250c8ee6d00286be1d79e6ee9a08d1c73610a23b46fbdd2f8005d2c");
+  }
+
+  .alert {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .mid-div {
+    display: inline-block;
+    height: 1000px;
+    border: 1px black solid;
+    /* background-color: white; */
+    background-image: url('image1.jpg');
+    background-size: cover;
+    width: 80%;
+    margin: 0 auto;
+
+  }
+
+  .card:hover {
+    opacity: 1;
+    box-shadow: 10px 10px 10px rgb(57, 56, 55);
+  }
+
+  .side-div {
+    width: 10%;
+    display: inline-block;
+    height: 900px;
+    /* border: 1px black solid; */
+  }
+
+  .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .carousel-item {
+    height: 400px;
+    width: 1213.75px;
+    /* border: 1px solid black; */
+  }
+
+  #ci-1 {
+
+    background-image: url("https://images.unsplash.com/photo-1485796826113-174aa68fd81b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWFjaGluZSUyMGxlYXJuaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-position: top;
+  }
+
+  #ci-2 {
+    background-image: url("https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/06/06/2139148-untitled-design-2022-06-04t160005.913.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  #ci-3 {
+    background-image: url("https://azati.ai/wp-content/uploads/2020/04/istock_56013860_molecule_computer_2500-1-1-1-800x400-1.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .carousel:hover .carousel-control-prev-icon,
+  .carousel:hover .carousel-control-next-icon {
+    opacity: 1;
+  }
+
+  .carousel:hover .carousel-indicators li {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .carousel:hover .carousel-inner .carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  .carousel:hover .carousel-inner .carousel-item:hover::before {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .carousel:hover .carousel-inner .carousel-item:hover .carousel-caption {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .carousel:hover .carousel-indicators li.active {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .mid-div {
+    position: relative;
+  }
+
+  #aa1 {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+  }
+</style>
+
+<body>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+    
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#" style="margin-right: 60px;">Rock Company</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html" style="font-weight: 500;">Home<span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="bs-project2.html" style="font-weight: 500;">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Topics
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-weight: 500;">
+            <a class="dropdown-item" href="#">Technology</a>
+            <a class="dropdown-item" href="#">Web Development</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Support</a>
+            <a class="dropdown-item" href="#">Write for us</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="bs-project3.html" style="font-weight: 500;">Contact us</a>
+      </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-light" type="submit">Search</button>
+      </form>
+      <div class="mx-2">
+        <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
+        <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">SignUp</button>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="/action_page.php">
+          <div class="form-group">
+            <label for="email">Email address:</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd">
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox"> Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- SignUp Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="/action_page.php">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="name" class="form-control" id="name" placeholder="Eg-John">
+          </div>
+          <div class="form-group">
+            <label for="email">Email address:</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd">
+          </div>
+          <div class="form-group">
+            <label for="pwd2">Confirm Password:</label>
+            <input type="password" class="form-control" id="pwd2">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- carousel -->
+  <div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active" id="ci-1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <button class="btn btn-success">Technology</button>
+            <button class="btn btn-danger">Web Development</button>
+            <button class="btn btn-primary">Tech fun</button>
+          </div>
+        </div>
+        <div class="carousel-item" id="ci-2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <button class="btn btn-success">Technology</button>
+            <button class="btn btn-danger">Web Development</button>
+            <button class="btn btn-primary">Tech fun</button>
+          </div>
+        </div>
+        <div class="carousel-item" id="ci-3">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <button class="btn btn-success">Technology</button>
+            <button class="btn btn-danger">Web Development</button>
+            <button class="btn btn-primary">Tech fun</button>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="container" style="margin-top: 10px; background-color:rgb(234, 234, 219); border-radius: 5px;">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          style="background-color: white;">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">World</strong>
+            <h3 class="mb-0">Featured post</h3>
+            <div class="mb-1 text-muted">Nov 12</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+              additional content.</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img
+              src="https://images.unsplash.com/photo-1485796826113-174aa68fd81b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWFjaGluZSUyMGxlYXJuaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+              class="bd-placeholder-img" width="200" height="250" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          style="background-color: white;">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Design</strong>
+            <h3 class="mb-0">Post title</h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional
+              content.</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img
+              src="https://azati.ai/wp-content/uploads/2020/04/istock_56013860_molecule_computer_2500-1-1-1-800x400-1.jpg"
+              class="bd-placeholder-img" width="200" height="250" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          style="background-color: white;">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">World</strong>
+            <h3 class="mb-0">Featured post</h3>
+            <div class="mb-1 text-muted">Nov 12</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+              additional content.</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img
+              src="https://images.unsplash.com/photo-1485796826113-174aa68fd81b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWFjaGluZSUyMGxlYXJuaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+              class="bd-placeholder-img" width="200" height="250" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          style="background-color: white;">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Design</strong>
+            <h3 class="mb-0">Post title</h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional
+              content.</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img
+              src="https://azati.ai/wp-content/uploads/2020/04/istock_56013860_molecule_computer_2500-1-1-1-800x400-1.jpg"
+              class="bd-placeholder-img" width="200" height="250" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="card bg-dark text-white" style="height: 150px;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi4V12ZSrclZ_V3S6O_WYMQCCncmOdAEWLQw&usqp=CAU"
+        height="150px
+            " class="card-img" alt="...">
+      <div class="card-img-overlay" style="font-size: 20px; color: black; height: 150px;">
+        <h2 class="card-title" style="text-align: center; font-weight: 600;">Card title</h2>
+        <p class="card-text" style="text-align: center;">This is a wider card with supporting text below as a natural
+          lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
